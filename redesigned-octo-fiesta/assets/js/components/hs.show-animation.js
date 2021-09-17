@@ -1,12 +1,12 @@
 ;
-(function($) {
+(function ($) {
     'use strict';
     $.HSCore.components.HSShowAnimation = {
         _baseConfig: {
-            afterShow: function() {}
+            afterShow: function () {}
         },
         pageCollection: $(),
-        init: function(selector, config) {
+        init: function (selector, config) {
             this.collection = selector && $(selector).length ? $(selector) : $();
             if (!$(selector).length) return;
             this.config = config && $.isPlainObject(config) ? $.extend({}, this._baseConfig, config) : this._baseConfig;
@@ -14,17 +14,17 @@
             this.initShowEffect();
             return this.pageCollection;
         },
-        initShowEffect: function() {
+        initShowEffect: function () {
             var $self = this,
                 config = $self.config,
                 collection = $self.pageCollection;
-            this.collection.each(function(i, el) {
+            this.collection.each(function (i, el) {
                 var $this = $(el),
                     linkGroup = $this.data('link-group'),
                     $target = $($this.data('target')),
                     targetGroup = $target.data('target-group'),
                     animateIn = $this.data('animation-in');
-                $this.on('click', function(e) {
+                $this.on('click', function (e) {
                     e.preventDefault();
                     if ($(this).hasClass('active')) return;
                     $('[data-link-group="' + linkGroup + '"]').removeClass('active');
@@ -38,18 +38,20 @@
                 collection = collection.add($this);
             });
         },
-        hideShow: function(target, targetgroup, config) {
+        hideShow: function (target, targetgroup, config) {
             $('[data-target-group="' + targetgroup + '"]').hide().css('opacity', 0);
             target.show().css('opacity', 1);
             config.afterShow();
         },
-        addAnimation: function(target, targetgroup, animatein, config) {
+        addAnimation: function (target, targetgroup, animatein, config) {
             $('[data-target-group="' + targetgroup + '"]').hide().css('opacity', 0).removeClass('animated ' + animatein);
             target.show();
             config.afterShow();
-            setTimeout(function() {
+            setTimeout(function () {
                 target.css('opacity', 1).addClass('animated ' + animatein);
             }, 50);
         }
     };
 })(jQuery);
+
+
