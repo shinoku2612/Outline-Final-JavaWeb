@@ -609,6 +609,16 @@
                     <!--End Nav Account Information-->
 
                     <li class="flex-shrink-0 flex-lg-shrink-1 nav-item mb-3">
+                        <a class="py-1 d-inline-block nav-link font-weight-medium" id="#fill-tab-personal-info"
+                            data-toggle="pill" href="#fill-tab-personal-info" role="tab"
+                            aria-controls="fill-personal-info" aria-selected="false">
+                            <i class="fab fa-jedi-order  text-carolina mr-2 font-size-5"></i>
+                            Personal Info
+                        </a>
+                    </li>
+                    <!-- End Nav Personal Info -->
+
+                    <li class="flex-shrink-0 flex-lg-shrink-1 nav-item mb-3">
                         <a class="py-1 d-inline-block nav-link font-weight-medium" id="#fill-purchase-order"
                             data-toggle="pill" href="#fill-purchase-order" role="tab"
                             aria-controls="fill-purchase-order" aria-selected="false">
@@ -716,8 +726,6 @@
                                                     <p class="mt-5">Full Name</p>
                                                     <p class="mt-5">Email</p>
                                                     <p class="mt-5">Phone Number</p>
-                                                    <p class="mt-5">Gender</p>
-                                                    <p class="mt-5">Birth Day</p>
                                                 </div>
 
                                             </div>
@@ -734,33 +742,6 @@
                                                         <a href="#" class="float-right">Change </a>
                                                     </span>
                                                     <!--Phone number-->
-
-                                                    <span class="mt-7">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="genderUser" id="genderMale" value="optionMale">
-                                                            <label class="form-check-label"
-                                                                for="genderMale">Male</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="genderUser" id="genderFemale"
-                                                                value="optionFemale">
-                                                            <label class="form-check-label"
-                                                                for="genderFemale">Female</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="genderUser" id="genderOthers"
-                                                                value="optionOthers">
-                                                            <label class="form-check-label"
-                                                                for="genderOthers">Others</label>
-                                                        </div>
-                                                    </span>
-
-                                                    <div class="mt-7">
-                                                        <div id="default-birthday"></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <!--End column-->
@@ -770,9 +751,6 @@
                                             </div>
                                         </div>
                                         <!--End row-->
-
-
-
                                     </div>
 
                                 </div>
@@ -784,6 +762,155 @@
                     </div>
                     <!--End Panel Nav Account information-->
 
+                    <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-2 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
+                        id="fill-tab-personal-info" role="tabpanel" aria-labelledby="fill-tab-personal-info">
+                        <!-- Mockup Block -->
+                        <div class="border-bottom pb-2">
+                            <h3>Personal Information</h3>
+                            <p>Info about you and your preferences across our services</p>
+                        </div>
+                        <div class="mt-4 pb-3 pl-3">
+                            <form method="#" action="#">
+
+                                <div class="col-xl-12 col-lg-12 ">
+                                    <div class="row flex-wrap border-bottom pb-2">
+                                        <div class="col-lg-3 text-gray-400 text-left col-sm-4">
+                                            <h4>Basic info</h4>
+                                            <div class="flex-column d-flex">
+                                                <p class="mt-6">Full Name</p>
+                                                <p class="mt-6">Birth Day</p>
+                                                <p class="mt-6">Gender</p>
+                                            </div>
+                                        </div>
+                                        <!-- End column -->
+
+                                        <div class="col-lg-6 col-sm-8">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__fullName" class="mt-10 font-size-4">Full name</p>
+                                                <input id="js__full-name-inp" placeholder="Full name"
+                                                    class="mt-10 p-1 mb-2 d-none" />
+
+                                                <div class="mt-6">
+                                                    <div class="default-birthday"></div>
+                                                </div>
+
+                                                <span class="mt-8">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="genderUser"
+                                                            id="genderMale" value="optionMale">
+                                                        <label class="form-check-label" for="genderMale">Male</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="genderUser"
+                                                            id="genderFemale" value="optionFemale">
+                                                        <label class="form-check-label"
+                                                            for="genderFemale">Female</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="genderUser"
+                                                            id="genderOthers" value="optionOthers">
+                                                        <label class="form-check-label"
+                                                            for="genderOthers">Others</label>
+                                                    </div>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+
+                                        <div class="col-lg-3 text-left col-sm-4">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__change-full-name" class="mt-10 user-btn-change">Change</p>
+                                            </div>
+                                        </div>
+                                        <!-- End column -->
+
+                                    </div>
+                                    <!--End row-->
+
+                                    <div class="row flex-wrap border-bottom pb-2 mt-4">
+                                        <div class="col-lg-3 text-gray-400 text-left col-sm-4">
+                                            <h4>Contact info</h4>
+                                            <div class="flex-column d-flex">
+                                                <p class="mt-5">Email</p>
+                                                <p class="mt-5">Phone</p>
+                                                <p class="mt-5">Address</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-sm-8">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__email" class="mt-9 mb-6 font-size-4">email-address@email</p>
+                                                <input id="js__email-inp" type="email" placeholder="Email"
+                                                    class="mt-8 p-1 mb-6 d-none" />
+
+                                                <p id="js__phone" class="mb-6 font-size-4">0123456789</p>
+                                                <input id="js__phone-inp" placeholder="Phone" class="mb-6 p-1 d-none" />
+
+                                                <p id="js__address" class="font-size-4">St. Louis, Missouri, United States</p>
+                                                <input id="js__address-inp" placeholder="Address" class="p-1 d-none" />
+
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+
+                                        <div class="col-lg-3 text-left col-sm-4">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__change-email" class="mt-9 mb-7 user-btn-change">Change</p>
+                                            </div>
+                                            <div class="flex-column d-flex">
+                                                <p id="js__change-phone" class="mb-7 user-btn-change">Change</p>
+                                            </div>
+                                            <div class="flex-column d-flex">
+                                                <p id="js__change-address" class="user-btn-change">Change</p>
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+
+                                    </div>
+                                    <!--End row-->
+
+                                    <div class="row flex-wrap border-bottom pb-2 mt-4">
+                                        <div class="col-lg-3 text-gray-400 text-left col-sm-4">
+                                            <h4>Others info</h4>
+                                            <div class="flex-column d-flex">
+                                                <p class="mt-5">Deliver Address</p>
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+
+                                        <div class="col-lg-6 col-sm-8">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__delivered-address" class="mt-9 font-size-4">St. Louis, Missouri, United States</p>
+                                                <input id="js__delivered-address-inp" placeholder="Deliver Address"
+                                                    class="mt-8 p-1 d-none" />
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+                                        <div class="col-lg-3 text-left col-sm-4">
+                                            <div class="flex-column d-flex">
+                                                <p id="js__change-delivered-address" class="mt-9 user-btn-change">Change
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--End column-->
+
+                                    </div>
+                                    <!--End row-->
+
+                                    <div class="mx-auto mt-5">
+                                        <button id="js__save-person-info" type="submit"
+                                            class="btn btn-secondary btn-danger">Save</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                            <!--End form -->
+                        </div>
+                        <!-- End Mockup Block -->
+                    </div>
+                    <!--End Panel Nav Personal info-->
 
                     <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade border-left pl-4 pt-4 pl-lg-3 pt-lg-3 pl-xl-6 pt-xl-6"
                         id="fill-purchase-order" role="tabpanel" aria-labelledby="fill-purchase-order">
@@ -1461,83 +1588,83 @@
 
                     </div>
                     <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-4 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
-                    id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                                role="tab" aria-controls="pills-contact" aria-selected="false">Contacdast</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">...</div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                        id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Contacdast</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">...</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+
                     </div>
+                    <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-4 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
+                        id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">...</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
+                        </div>
 
-                </div>
-                <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-4 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
-                id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                            role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                            role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                            role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab">...</div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                        aria-labelledby="pills-profile-tab">...</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                        aria-labelledby="pills-contact-tab">...</div>
-                </div>
+                    </div>
+                    <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-4 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
+                        id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">...</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">sadd</div>
+                        </div>
 
-            </div>
-            <div class="ecommerce-Tabs-panel panel entry-content wc-tab tab-pane fade  pl-4 pt-4 pl-lg-6 pt-lg-6 pl-xl-9 pt-xl-9"
-            id="fill-user-review" role="tabpanel" aria-labelledby="fill-user-review">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                        role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                        role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                        role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                    aria-labelledby="pills-home-tab">...</div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                    aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                    aria-labelledby="pills-contact-tab">sadd</div>
-            </div>
-
-        </div>
+                    </div>
                     <!--End list-->
                 </div>
                 <!-- End Tab Content -->
@@ -1781,6 +1908,9 @@
             });
         });
     </script>
+
+    <!-- User scripts -->
+    <script src="../../assets/js/hs.person-info.js"></script>
 </body>
 
 </html>
