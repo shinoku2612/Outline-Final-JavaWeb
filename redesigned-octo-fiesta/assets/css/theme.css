@@ -9144,6 +9144,11 @@ a.badge-red-1.focus {
     border: 1px solid #eae8e4
 }
 
+.list-group-item:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
 .list-group-item:first-child {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem
